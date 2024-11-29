@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf8ee;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.radio-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: none; 
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px; 
+    font-size: 16px;
+    color: #fff;
+    background-color: #008000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+.submit-btn:hover {
+    background-color: #006400;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px; 
+        max-width: 350px; 
+    }
+
+    .contact-form h1 {
+        font-size: 22px;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 15px;
+        max-width: 90%; 
+    }
+
+    .contact-form h1 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px; 
+        font-size: 13px; 
+    }
+
+    .submit-btn {
+        font-size: 14px; 
+        padding: 10px;
+    }
+
+    .radio-group {
+        flex-direction: column; 
+    }
+}
